@@ -6,16 +6,32 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 struct ContentView: View {
+    
+        var notificationManager = LocalNotificationManager()
+        @State var showFootnote = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        
+        NavigationView{
+            VStack{
+                Button(action: {
+                    withAnimation{
+                        self.showFootnote.toggle()
+                        self.notificationManager.sendNotification(title: "HI", subtitle: nil, body: "Hello", launchIn: 5)
+                    }
+                    
+                }) {
+                    /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
+                }
+                if  showFootnote{
+                    Text("5sec")
+                }
+                
+            }
+            .navigationBarTitle("Local", displayMode: .inline)
+        }
     }
 }

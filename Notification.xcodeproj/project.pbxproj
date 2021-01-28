@@ -15,6 +15,7 @@
 		E2C2BF8B25BCE76800A1D5A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C2BF8925BCE76800A1D5A4 /* LaunchScreen.storyboard */; };
 		E2C2BF9625BCE76900A1D5A4 /* NotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2BF9525BCE76900A1D5A4 /* NotificationTests.swift */; };
 		E2C2BFA125BCE76900A1D5A4 /* NotificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2BFA025BCE76900A1D5A4 /* NotificationUITests.swift */; };
+		E2C2BFB225BD77AD00A1D5A4 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2BFB125BD77AD00A1D5A4 /* LocalNotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E2C2BF9C25BCE76900A1D5A4 /* NotificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C2BFA025BCE76900A1D5A4 /* NotificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationUITests.swift; sourceTree = "<group>"; };
 		E2C2BFA225BCE76900A1D5A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2C2BFB125BD77AD00A1D5A4 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				E2C2BF8925BCE76800A1D5A4 /* LaunchScreen.storyboard */,
 				E2C2BF8C25BCE76800A1D5A4 /* Info.plist */,
 				E2C2BF8625BCE76800A1D5A4 /* Preview Content */,
+				E2C2BFB125BD77AD00A1D5A4 /* LocalNotificationManager.swift */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				E2C2BF7F25BCE76000A1D5A4 /* AppDelegate.swift in Sources */,
 				E2C2BF8125BCE76100A1D5A4 /* SceneDelegate.swift in Sources */,
+				E2C2BFB225BD77AD00A1D5A4 /* LocalNotificationManager.swift in Sources */,
 				E2C2BF8325BCE76100A1D5A4 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +442,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Notification/Preview Content\"";
+				DEVELOPMENT_TEAM = PC6298G7HT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Notification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -458,6 +463,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Notification/Preview Content\"";
+				DEVELOPMENT_TEAM = PC6298G7HT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Notification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
